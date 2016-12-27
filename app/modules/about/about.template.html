@@ -16,33 +16,17 @@
 
 
                  <div class="row about-team-padding-top">
-                   <div class="col-md-4">
-                   <div class="about-btn about-section-btn center-block">
-                     <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod augue eu neque luctus, at imperdiet velit vestibulum. Nullam faucibus turpis non risus vehicula, eget facilisis felis tempor. Nulla hendrerit est in purus molestie, nec cursus tellus finibus.</p>
-                   </div>
-                  <img  src="images/about/image_01_about.jpg">
-                  <h1 class="about-team-header"> Lead Photographer</h1>
-                  <h2 class="about-team-subhead"> person title goes here</h2>
-                 </div>
 
-
-                  <div class="col-md-4">
+                  <div class="col-md-4" ng-repeat="bio in $ctrl.bios">
                    <div class="about-btn about-section-btn center-block">
-                     <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod augue eu neque luctus, at imperdiet velit vestibulum. Nullam faucibus turpis non risus vehicula, eget facilisis felis tempor. Nulla hendrerit est in purus molestie, nec cursus tellus finibus.</p>
+                     <p class="about-section-content">{{bio.info}}</p>
                    </div>
-                  <img  src="images/about/image_02_about.jpg">
-                  <h1 class="about-team-header"> Lead Designer</h1>
-                  <h2 class="about-team-subhead"> person title goes here</h2>
+                  <img  ng-src="{{bio.src}}">
+                  <h1 class="about-team-header">{{bio.header}}</h1>
+                  <h2 class="about-team-subhead"> {{bio.subhead}}</h2>
                  </div>
+                  
 
-                  <div class="col-md-4">
-                   <div class="about-btn about-section-btn center-block">
-                     <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod augue eu neque luctus, at imperdiet velit vestibulum. Nullam faucibus turpis non risus vehicula, eget facilisis felis tempor. Nulla hendrerit est in purus molestie, nec cursus tellus finibus.</p>
-                   </div>
-                  <img  src="images/about/image_03_about.jpg">
-                  <h1 class="about-team-header"> Lead retoucher</h1>
-                  <h2 class="about-team-subhead"> person title goes here</h2>
-                 </div>
                  </div>
                  
 

@@ -9,6 +9,12 @@ aboutSection.component('aboutSection',{
 
 		var self = this;
 
+		$http.get('data/about.json').then(function (response) {
+                          self.bios = response.data;
+
+                         
+         });
+
 	}
 
 
