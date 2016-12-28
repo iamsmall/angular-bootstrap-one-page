@@ -34,3 +34,8 @@ Page Sections -
 
  The sections for the one page template are located in the "modules" folder 
 
+
+ I left the node_modules folder in to make compiling for someone easier just in case there are any issues.
+
+ To compile locally - just run "gulp" in Terminal at the command line 
+
